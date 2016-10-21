@@ -1,0 +1,33 @@
+@media only screen {
+  $bubble-size: 7rem;
+  div.brand-bar {
+    position: fixed;
+    top: -1rem;
+    left: -1rem;
+    height: $bubble-size;
+    width: $bubble-size;
+    background-color: white;
+    color: black;
+    z-index: 2;
+    border: 2px solid $color-nav-background;
+    border-radius: ($bubble-size/2);
+  }
+}
+
+@media only screen and (min-width: $medium-screen-min) {
+  div.brand-bar {
+    top: 0px;
+    left: 0px;
+    height: 10rem;
+    width: 100%;
+    background-color: white;
+    color: black;
+    z-index: 2;
+    border: none;
+    border-radius: 0px;
+  }
+}
+
+@media only screen and (min-width: $large-screen-min) {
+
+}

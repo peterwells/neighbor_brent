@@ -1,0 +1,35 @@
+@media only screen {
+  div.brand-bar {
+    position: fixed;
+    top: -1rem;
+    left: -1rem;
+    height: 7rem;
+    width: 7rem;
+    background-color: white;
+    color: black;
+    z-index: 2;
+    border: 2px solid #3D3D3D;
+    border-radius: 3.5rem; } }
+@media only screen and (min-width: 405px) {
+  div.brand-bar {
+    top: 0px;
+    left: 0px;
+    height: 10rem;
+    width: 100%;
+    background-color: white;
+    color: black;
+    z-index: 2;
+    border: none;
+    border-radius: 0px; } }
+@media only screen {
+  nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 5rem;
+    width: 100%;
+    background-color: #3D3D3D;
+    color: white;
+    z-index: 1; } }
+
+/*# sourceMappingURL=site.css.map */

@@ -6,6 +6,10 @@
     height: 5rem;
     width: 100%;
     background-color: $color-nav-background;
+    background-image: url('..//images/fivediamondsname_white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     color: white;
     z-index: 1;
   }

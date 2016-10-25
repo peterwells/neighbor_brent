@@ -21,6 +21,10 @@
     height: 10rem;
     width: 100%;
     background-color: white;
+    background-image: url("../images/fivediamondsbanner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     color: black;
     z-index: 2;
     border: none;
@@ -33,6 +37,10 @@
     height: 5rem;
     width: 100%;
     background-color: #3D3D3D;
+    background-image: url("..//images/fivediamondsname_white.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     color: white;
     z-index: 1; } }
 

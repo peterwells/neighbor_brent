@@ -6,6 +6,10 @@
     height: 7rem;
     width: 7rem;
     background-color: white;
+    background-image: url("../images/fivediamondslogo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     color: black;
     z-index: 2;
     border: 2px solid #3D3D3D;

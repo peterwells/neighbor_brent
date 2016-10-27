@@ -3,8 +3,8 @@
     position: fixed;
     top: -1rem;
     left: -1rem;
-    height: 7rem;
-    width: 7rem;
+    height: 10rem;
+    width: 10rem;
     background-color: white;
     background-image: url("../images/fivediamondslogo.png");
     background-size: contain;
@@ -13,7 +13,7 @@
     color: black;
     z-index: 2;
     border: 2px solid #3D3D3D;
-    border-radius: 3.5rem; } }
+    border-radius: 5rem; } }
 @media only screen and (min-width: 40.0625em) {
   div.brand-bar {
     top: 0px;
@@ -34,7 +34,7 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    height: 5rem;
+    height: 8rem;
     width: 100%;
     background-color: #3D3D3D;
     background-image: url("..//images/fivediamondsname_white.png");
@@ -42,6 +42,22 @@
     background-repeat: no-repeat;
     background-position: center;
     color: white;
-    z-index: 1; } }
+    z-index: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; }
+
+  a.hamburger {
+    display: inline-block;
+    color: inherit;
+    height: 8rem;
+    width: 8rem;
+    position: relative; }
+
+  a.hamburger > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); } }
 
 /*# sourceMappingURL=site.css.map */

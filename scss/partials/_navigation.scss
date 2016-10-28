@@ -1,5 +1,6 @@
 @media only screen {
   $nav-thickness: 6rem;
+  $nav-zindex: 1;
 	nav {
     position: fixed;
     top: 0px;
@@ -12,7 +13,7 @@
     background-repeat: no-repeat;
     background-position: center;
     color: white;
-    z-index: 1;
+    z-index: $nav-zindex;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -35,6 +36,7 @@
 
   div.mobile-nav.closed {
     display:none;
+    height: 100%;
   }
 
   div.mobile-nav.open {
@@ -47,10 +49,13 @@
     margin: 0px;
     width: 90%;
     height: 100%;
-    list-style-type: none;
     text-align: center;
-    font-size: $nav-thickness;
-    z-index: 1;
+    z-index: $nav-zindex;
+  }
+
+  div.mobile-nav > ul {
+    list-style-type: none;
+    font-size: $nav-thickness - 2;
   }
 }
 

@@ -1,12 +1,13 @@
 @media only screen {
+  $nav-thickness: 6rem;
 	nav {
     position: fixed;
     top: 0px;
     left: 0px;
-    height: 8rem;
+    height: $nav-thickness;
     width: 100%;
     background-color: $color-nav-background;
-    background-image: url('..//images/fivediamondsname_white.png');
+    //background-image: url('..//images/fivediamondsname_white.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -20,8 +21,8 @@
   a.hamburger {
     display: inline-block;
     color: inherit;
-    height: 8rem;
-    width: 8rem;
+    height: $nav-thickness;
+    width: $nav-thickness;
     position: relative;
   }
 
@@ -30,6 +31,26 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  div.mobile-nav.closed {
+    display:none;
+  }
+
+  div.mobile-nav.open {
+    position: absolute;
+    top: $nav-thickness;
+    right: 0px;
+    display: block;
+    background-color: $color-nav-background;
+    color: white;
+    margin: 0px;
+    width: 90%;
+    height: 100%;
+    list-style-type: none;
+    text-align: center;
+    font-size: $nav-thickness;
+    z-index: 1;
   }
 }
 

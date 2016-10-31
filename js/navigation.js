@@ -9,7 +9,11 @@ function toggle_open(){
 }
 
 function add_hamburger_onclick(){
-  $('#hamburger').on('click',toggle_open);
+  //$('#hamburger').on('click',toggle_open);
+  $('#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+    $('div.mobile-nav').toggleClass('open');
+	});
 }
 
 

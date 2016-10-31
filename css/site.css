@@ -54,10 +54,6 @@
     width: 75%; }
 
   div.mobile-nav {
-    display: none;
-    height: 100%; }
-
-  div.mobile-nav.open {
     position: absolute;
     top: 4rem;
     right: 0px;
@@ -65,10 +61,18 @@
     background-color: #3D3D3D;
     color: white;
     margin: 0px;
-    width: 90%;
+    width: 0;
     height: 100%;
     text-align: center;
-    z-index: 1; }
+    z-index: 1;
+    overflow-x: hidden;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+
+  div.mobile-nav.open {
+    width: 90%; }
 
   div.mobile-nav > ul {
     list-style-type: none;

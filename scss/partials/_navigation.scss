@@ -27,11 +27,6 @@
   }
 
   div.mobile-nav {
-    display:none;
-    height: 100%;
-  }
-
-  div.mobile-nav.open {
     position: absolute;
     top: $nav-thickness;
     right: 0px;
@@ -39,10 +34,19 @@
     background-color: $color-nav-background;
     color: white;
     margin: 0px;
-    width: 90%;
+    width: 0;
     height: 100%;
     text-align: center;
     z-index: $nav-zindex;
+    overflow-x: hidden;
+    -webkit-transition: all .5s ease;//.5s ease-in-out;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+
+  div.mobile-nav.open {
+    width: 90%;
   }
 
   div.mobile-nav > ul {

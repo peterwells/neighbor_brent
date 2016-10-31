@@ -15,21 +15,6 @@
     align-items: center;
   }
 
-  a.hamburger {
-    display: inline-block;
-    color: inherit;
-    height: 100%;
-    width: 15%;
-    position: relative;
-  }
-
-  a.hamburger > i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   div.mobile-brand {
     background-color: inherit;
     background-image: url('..//images/fivediamondsname_white.png');
@@ -65,9 +50,9 @@
     font-size: $nav-thickness - 2;
   }
 
-  #nav-icon4 {
-  width: $nav-thickness;
-  height: $nav-thickness;
+  #nav-icon {
+  width: $nav-thickness - 1;
+  height: $nav-thickness - 1;
   position: relative;
   margin: 0 1rem;
   -webkit-transform: rotate(0deg);
@@ -81,10 +66,11 @@
   cursor: pointer;
 }
 
-$hamburger-top-offset: .5rem;
-$hamburger-layer-height: 9px;
+$hamburger-top-offset: .2rem;
+$hamburger-layer-height: .5rem;
+$hamburger-left-offset: 8px;
 
-#nav-icon4 span {
+#nav-icon span {
   display: block;
   position: absolute;
   height: $hamburger-layer-height;
@@ -103,51 +89,37 @@ $hamburger-layer-height: 9px;
   transition: .25s ease-in-out;
 }
 
-#nav-icon4 span:nth-child(1) {
-  top: $hamburger-top-offset;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
+@for $i from 1 through 3 {
+  #nav-icon span:nth-child(#{$i}) {
+    top: ($hamburger-top-offset + ($hamburger-layer-height * (($i - 1) * 2)));
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
 }
 
-#nav-icon4 span:nth-child(2) {
-  top: ($hamburger-top-offset * 3);
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-
-#nav-icon4 span:nth-child(3) {
-  top: ($hamburger-top-offset * 5);
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-
-#nav-icon4.open span:nth-child(1) {
+#nav-icon.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  top: ($hamburger-top-offset/2);
-  left: 8px;
+  top: ($hamburger-top-offset);
+  left: $hamburger-left-offset;
 }
 
-#nav-icon4.open span:nth-child(2) {
+#nav-icon.open span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
 
-#nav-icon4.open span:nth-child(3) {
+#nav-icon.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: ($hamburger-top-offset * 6);
-  left: 8px;
+  top: ($hamburger-top-offset + ($hamburger-layer-height * 4.1));
+  left: $hamburger-left-offset;
 }
 }
 

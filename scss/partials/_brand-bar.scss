@@ -1,11 +1,10 @@
 @media only screen {
-  $bubble-size: 6rem;
   div.brand-bar {
     position: fixed;
-    top: -1rem;
+    top: -1rem; 
     left: -1rem;
-    height: $bubble-size;
-    width: $bubble-size;
+    height: $brand-bar-bubble-size;
+    width: $brand-bar-bubble-size;
     background-color: white;
     background-image: url('../images/fivediamondslogo.png');
     background-size: contain;
@@ -14,7 +13,7 @@
     color: black;
     z-index: 2;
     border: 2px solid $color-nav-background;
-    border-radius: ($bubble-size/2);
+    border-radius: ($brand-bar-bubble-size/2);
   }
 }
 

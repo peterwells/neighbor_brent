@@ -1,7 +1,7 @@
 @media only screen {
-  $nav-thickness: 4rem;
   $nav-zindex: 1;
-	nav {
+  //main navigation
+	nav.main {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -15,6 +15,20 @@
     align-items: center;
   }
 
+  nav.main > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: $brand-bar-bubble-size;
+  }
+
+  nav.main > ul > li {
+    margin: .25rem .5rem;
+  }
+
+  //brand bar on phone, may not use this
   div.mobile-brand {
     background-color: inherit;
     background-image: url('..//images/fivediamondsname_white.png');

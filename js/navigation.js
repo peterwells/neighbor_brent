@@ -1,4 +1,5 @@
 function add_hamburger_onclick(){
+  $('#nav-icon').show();
   $('#nav-icon').click(function(){
 		$(this).toggleClass('open');
     $('div.mobile-nav').toggleClass('open');

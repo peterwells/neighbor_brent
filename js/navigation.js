@@ -1,5 +1,15 @@
+function show_hide_hamburger(){
+  var viewportWidth = $(window).width();
+  var emSize = parseFloat($("body").css("font-size"));
+  var medViewportMin = emSize * 40.0625;
+  if (viewportWidth < medViewportMin){
+    $('#nav-icon').show();
+  } else {
+    $('#nav-icon').hide();
+  }
+}
+
 function add_hamburger_onclick(){
-  $('#nav-icon').show();
   $('#nav-icon').click(function(){
 		$(this).toggleClass('open');
     $('div.mobile-nav').toggleClass('open');
@@ -28,6 +38,7 @@ function add_check_for_size_change(){
   $(window).on('resize', function(){
     hide_non_mobile_nav();
     show_non_mobile_nav();
+    show_hide_hamburger();
   })
 }
 

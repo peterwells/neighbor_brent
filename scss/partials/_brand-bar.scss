@@ -1,7 +1,7 @@
 @media only screen {
   div.brand-bar {
     position: fixed;
-    top: -1rem; 
+    top: -1rem;
     left: -1rem;
     height: $brand-bar-bubble-size;
     width: $brand-bar-bubble-size;
@@ -21,7 +21,7 @@
   div.brand-bar {
     top: 0px;
     left: 0px;
-    height: 10rem;
+    height: $brand-bar-height;
     width: 100%;
     background-color: white;
     background-image: url('../images/fivediamondsbanner.png');

@@ -162,6 +162,13 @@
     transform: rotate(-45deg);
     top: 2.25rem;
     left: 8px; } }
+@media only screen and (min-width: 40.0625em) {
+  #nav-icon {
+    display: none; }
+
+  nav.main {
+    display: relative;
+    top: 10rem; } }
 div.map-container {
   position: relative;
   width: 100%;

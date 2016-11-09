@@ -142,7 +142,14 @@ $hamburger-left-offset: 8px;
 }
 
 @media only screen and (min-width: $medium-screen-min) {
+  #nav-icon{
+    display:none;
+  }
 
+  nav.main {
+    display: relative;
+    top: $brand-bar-height;
+  }
 }
 
 @media only screen and (min-width: $large-screen-min) {

@@ -3,7 +3,7 @@
   <head>
   <title>Work in Progress</title>
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" type="text/css" href="css/site.min.css">
+  <link rel="stylesheet" type="text/css" href="css/site.css">
   <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
   </head>
   <body>
@@ -15,23 +15,19 @@
         <span></span>
         <span></span>
       </div>
-      <ul>
-        <li>Home</li>
-        <li>Something</li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li>Profit!</li>
-      </ul>
+      {% include nav_options.html %}
       <!-- div class="mobile-brand"></div -->
     </nav>
     <div class="mobile-nav">
-      <ul>
-        <li>Home</li>
-        <li>Something</li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li>Profit!</li>
-      </ul>
+      {% include nav_options.html %}
     </div>
     <div class='main'>
     </div>
     <div class='footer'>
-   
+    </div>
+  </body>
+  <script src="https://use.fontawesome.com/5a71ccaf68.js"></script>
+  <script type="text/javascript" src="js/analytics.min.js"></script>
+  <script type="text/javascript" src="js/navigation.js"></script>
+
+</html>

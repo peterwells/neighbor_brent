@@ -147,8 +147,17 @@ $hamburger-left-offset: 8px;
   }
 
   nav.main {
-    display: relative;
+    position: relative;
     top: $brand-bar-height;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  nav.main > ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
   }
 }
 

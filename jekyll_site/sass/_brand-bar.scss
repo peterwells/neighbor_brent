@@ -1,0 +1,40 @@
+@media only screen {
+  div.brand-bar {
+    position: fixed;
+    top: -1rem;
+    left: -1rem;
+    height: $brand-bar-bubble-size;
+    width: $brand-bar-bubble-size;
+    background-color: white;
+    background-image: url('../images/fivediamondslogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    z-index: 2;
+    border: 2px solid $color-nav-background;
+    border-radius: ($brand-bar-bubble-size/2);
+  }
+}
+
+@media only screen and (min-width: $medium-screen-min) {
+  div.brand-bar {
+    top: 0px;
+    left: 0px;
+    height: $brand-bar-height;
+    width: 100%;
+    background-color: white;
+    background-image: url('../images/fivediamondsbanner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: black;
+    z-index: 2;
+    border: none;
+    border-radius: 0px;
+  }
+}
+
+@media only screen and (min-width: $large-screen-min) {
+
+}

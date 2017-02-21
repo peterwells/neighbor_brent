@@ -34,3 +34,6 @@ exclude:
   - Gemfile.lock
 
 destination: site
+sass:
+  sass_dir: sass
+

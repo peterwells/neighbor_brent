@@ -1,6 +1,21 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: fivediamonds
 ---
+
+<div class='brand-bar'></div>
+<nav class='main'>
+  <div class="" id="nav-icon" hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  {% include nav_options.md %}
+  <!-- div class="mobile-brand"></div -->
+</nav>
+<div class="mobile-nav">
+  {% include nav_options.md %}
+</div>
+<div class='main'>
+</div>
+<div class='footer'>
+</div>
